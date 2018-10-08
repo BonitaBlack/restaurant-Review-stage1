@@ -5,9 +5,11 @@ var staticCacheName = 'restaurant-Review-stage1-v';
  var cache_id = randoNum;
  staticCacheName += cache_id;
 
-self.addEventListener("install", function(event) {
+self.addEventListener("install", function(event) 
+{
   event.waitUntil(
-    caches.open(staticCacheName).then(function(cache) {
+    caches.open(staticCacheName).then(function(cache) 
+    {
     return cache.addAll([
       'index.html',
       'restaurant.html',
