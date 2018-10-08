@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media only screen and (min-device-width: 350px) and (max-device-width: 500px)
+@media only screen and (min-device-width: 300px) and (max-device-width: 500px)
 {
 	.filter-selects {	
 		margin: 0px 30px;
@@ -38,7 +38,7 @@
 	}
 
 }
-@media screen and (min-width: 850px) 
+@media screen and (min-width: 1000px) 
 {
 
 	.container, .inside {
