@@ -12,6 +12,10 @@ body, html {
   height: 100%;
   overflow-x: hidden !important;
 }
+#map-container
+{
+  margin:10px;
+}
 
 .container {
   display: flex;
@@ -23,12 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-body,td,th,p{
+body,th,td,{
   font-family: Roboto;
   font-size: 12px;
   color: #424242;
   line-height: 1.5;
 }
+
 
 ul, li {
   list-style: none;
@@ -39,11 +44,14 @@ ul, li {
 a {
   color: orange;
   text-decoration: none;
+  padding: 10px;
 }
+
 
 a:hover, a:focus {
   color: #3397db;
   text-decoration: none;
+  
 }
 
 a img{
@@ -194,7 +202,6 @@ nav h1 a {
   min-height: 200px;
   padding: 40px 10px;
   text-align: center;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content:space-between;
@@ -222,7 +229,17 @@ nav h1 a {
   text-align: center;
 }
 
-#restaurants-list p {
+#restaurants-list a
+{
+  border: 1px solid #d9d9d9;
+}
+#restaurants-list a:hover, a:focus
+{
+  box-shadow: 10px 10px 5px grey;
+  
+}
+
+#restaurants-list {
   margin: 0;
   font-size: 11pt;
 }
@@ -284,18 +301,14 @@ nav h1 a {
 
 #restaurant-container{
   margin: auto;
-  width: 100%;
   height: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-flow: row;
   justify-content: space-evenly;
   align-items:baseline;
   padding: 10px;
 }
 
 .restaurant-change {
-  width:50%;
+  width:100%;
   text-align: center;
   height: auto;
   display: flex;
@@ -306,7 +319,7 @@ nav h1 a {
 }
 
 .restaurant-cleanup {
-  width:50%;
+  width:100ß%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -365,6 +378,7 @@ nav h1 a {
   margin: auto;
   justify-content: space-around;
   align-items:baseline;
+  font-size: 13pt;
 }
 
 #reviews-container h3 {
@@ -405,17 +419,17 @@ nav h1 a {
 #restaurant-hours td {
   color: black;
   background-color: #fff;
-  font-size: 10pt;
-  font-weight: 300;
+  font-size: 12pt;
+  font-weight: 350;
   padding: 5px 5px;
 }
 
 #restaurant-hours td:nth-of-type(1) {
-    font-weight: bold;
+    font-style: italic;
 }
 
 #restaurant-hours td:nth-of-type(2) {
-    font-style: italic;
+    font-weight: bold;
     max-width: 125px;
 }
 
